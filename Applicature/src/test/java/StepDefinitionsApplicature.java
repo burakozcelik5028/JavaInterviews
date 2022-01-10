@@ -65,6 +65,9 @@ public class StepDefinitionsApplicature {
     @Then("Result2 should be {cucumber}")
     public void result2_should_be(String result) {
         //expected result parameter should be "7 Health Benefits of Eating Cucumber - Healthline"
+        // Here I am directly opening second page. I do not need any parameter for this method...
+        // ...but I choose this way. I used 2 "then" in one feature...
+        // ...Maybe It would be better if I converted first "Then" annotation to the "And" annotation.
 
         WebElement calculatorTextBox = webDriver.findElement(By.className("LC20lb"));
         String resultText = calculatorTextBox.getText();
