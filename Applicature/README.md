@@ -51,4 +51,4 @@ I also tried different versions of chrome browser.
 
 # Git Usage
 
-![alt text](https://raw.githubusercontent.com/burakozcelik5028/JavaInterviews/main/Applicature/reports/git.png)
+* https://raw.githubusercontent.com/burakozcelik5028/JavaInterviews/main/Applicature/reports/git.png
