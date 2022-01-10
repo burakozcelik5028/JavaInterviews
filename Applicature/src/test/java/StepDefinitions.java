@@ -49,7 +49,6 @@ public class StepDefinitions {
     @After
     public void end() {
         if (webDriver != null) {
-            webDriver.close();
             webDriver.quit();
         }
     }
