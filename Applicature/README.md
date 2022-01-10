@@ -1,4 +1,4 @@
-# JavaInterviews
+## JavaInterviews
 
 # Applicature Task
 * Company: https://applicature.com/
@@ -24,14 +24,14 @@
 * Java (jdk1.8.0_271)
 * Gradle (gradle-7.1)
 
-dependencies {
-    implementation 'junit:junit:4.13.1'
-    testImplementation 'io.cucumber:cucumber-java:5.6.0'
-    testImplementation 'io.cucumber:cucumber-junit:5.6.0'
-    testImplementation 'io.cucumber:cucumber-testng:5.6.0'
-    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
-    implementation 'org.seleniumhq.selenium:selenium-chrome-driver:3.141.59'
-}
+dependencies:
+    * implementation 'junit:junit:4.13.1'
+    * testImplementation 'io.cucumber:cucumber-java:5.6.0'
+    * testImplementation 'io.cucumber:cucumber-junit:5.6.0'
+    * testImplementation 'io.cucumber:cucumber-testng:5.6.0'
+    * implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    * implementation 'org.seleniumhq.selenium:selenium-chrome-driver:3.141.59'
+
 
 
 
