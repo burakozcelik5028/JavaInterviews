@@ -47,6 +47,7 @@ public class StepDefinitionsApplicature {
 
         String getResult = results.getText();
         Assert.assertEquals(getResult, result);
+        Assert.assertEquals(getResult, "Approximate number of results: 201 000 000");
 
         if (results.getText().equals(result)){
             System.out.print("Approximate number of results are 201 000 000");
@@ -66,7 +67,7 @@ public class StepDefinitionsApplicature {
         //expected result parameter should be "7 Health Benefits of Eating Cucumber - Healthline"
 
         WebElement calculatorTextBox = webDriver.findElement(By.className("LC20lb"));
-        String results = calculatorTextBox.getText();
+        String resultText = calculatorTextBox.getText();
 
         if (calculatorTextBox.getText().equals(result)){
             System.out.print("First item in response at second page is 7 Health Benefits of Eating Cucumber - Healthline");
@@ -74,7 +75,8 @@ public class StepDefinitionsApplicature {
             System.out.print("Unfortunately first item in response at second page is not 7 Health Benefits of Eating Cucumber - Healthline");
         }
 
-        Assert.assertEquals(results, result);
+        Assert.assertEquals(resultText, result);
+        Assert.assertEquals(resultText, "7 Health Benefits of Eating Cucumber - Healthline");
         webDriver.close();
     }
 
