@@ -49,4 +49,6 @@ I also tried different versions of chrome browser.
 * https://stackoverflow.com/questions/50642308/webdriverexception-unknown-error-devtoolsactiveport-file-doesnt-exist-while-t
 
 
+# Git Usage
 
+![alt text](https://raw.githubusercontent.com/burakozcelik5028/JavaInterviews/main/Applicature/reports/git.png)
