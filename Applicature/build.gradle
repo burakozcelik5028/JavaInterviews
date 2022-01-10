@@ -20,6 +20,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'junit:junit:4.13.1'
     testImplementation 'io.cucumber:cucumber-java:5.6.0'
     testImplementation 'io.cucumber:cucumber-junit:5.6.0'
     testImplementation 'io.cucumber:cucumber-testng:5.6.0'
@@ -45,4 +46,24 @@ task cucumber() {
                     'src/test/resources']
         }
     }
+
+
+}
+
+task cucumberApplicature() {
+    dependsOn assemble, testClasses
+    doLast {
+        javaexec {
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = ['--plugin', 'html:reports/test-report-applicature',
+                    '--plugin',
+                    'pretty',
+                    '--glue',
+                    'com.example.javainterviews',
+                    'src/test/resources']
+        }
+    }
+
+
 }
